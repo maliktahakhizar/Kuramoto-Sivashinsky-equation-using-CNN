@@ -36,7 +36,7 @@ This repository provides an end-to-end framework combining scientific computing 
 | $(3, 31)$ | $3.1$ units | $0.50 \lambda$ ($\frac{1}{2}\lambda$) | **90.6%** |
 | $(3, 63)$ | $6.3$ units | $1.00 \lambda$ ($1\lambda$) | **95.6%** |
 | $(3, 127)$ | $12.7$ units | $2.00 \lambda$ ($2\lambda$) | **98.8%** |
-`CNN_accuracy.png`
+!(`CNN_accuracy.png`)
 ---
 
 ## Mathematical Background
@@ -47,7 +47,7 @@ $$\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + \frac{\parti
 
 Using the conservative non-linear identity $u u_x = \frac{1}{2}(u^2)_x$, transforming into Fourier space yields:
 
-$$\frac{\partial \hat{u}}{\partial t} = \left( k^2 - k^4 \right) \hat{u} - \frac{i k}{2} \mathcal{F}\left\{ u^2 \right\}$$
+$$\frac{\partial \hat{u}}{\partial t} = \left( k^2 - k^4 \right) \hat{u} - \frac{i k}{2} \mathcal{F}\left[ u^2 \right]$$
 
 ### Regimes Generated
 By varying domain length $L$, three distinct attractor states are synthesized:
