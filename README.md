@@ -36,7 +36,7 @@ This repository provides an end-to-end framework combining scientific computing 
 | $(3, 31)$ | $3.1$ units | $0.50 \lambda$ ($\frac{1}{2}\lambda$) | **90.6%** |
 | $(3, 63)$ | $6.3$ units | $1.00 \lambda$ ($1\lambda$) | **95.6%** |
 | $(3, 127)$ | $12.7$ units | $2.00 \lambda$ ($2\lambda$) | **98.8%** |
-
+`CNN_accuracy.png`
 ---
 
 ## Mathematical Background
@@ -57,13 +57,3 @@ By varying domain length $L$, three distinct attractor states are synthesized:
 
 ---
 
-## Repository Structure
-
-```text
-.
-├── main.py              # Main execution script (solver execution, patching, model sweep, plotting)
-├── ks_solver.py         # Pseudo-spectral FFT solver using scipy.integrate.solve_ivp
-├── dataset.py           # 2D sliding window cropping and PyTorch DataLoader wrapper
-├── model.py             # 2D Convolutional Neural Network architecture
-├── requirements.txt     # Python dependency list
-└── README.md            # Repository documentation
